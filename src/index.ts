@@ -15,7 +15,14 @@ const main = async () => {
     // console.log("result ", result);
 
     const getAllFromDB = await prisma.post.findMany();
-    console.log(getAllFromDB);
+
+    const findFirst = await prisma.post.findFirst({
+        where : {
+            id : 2
+        }
+    })
+
+    // console.log(findFirst);
 };
 
 main();
