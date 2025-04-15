@@ -22,7 +22,6 @@ const main = async () => {
         }
     })
 
-    // console.log(findFirst);
 };
 
 main();
