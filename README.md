@@ -1,12 +1,9 @@
----
-
 # 📘 Prisma ORM Guide
 
 ## 🔷 What is ORM?
 
 **ORM** stands for **Object-Relational Mapping**. It's a technique that lets you interact with your database using your programming language (like JavaScript or TypeScript), instead of writing raw SQL queries.
 
----
 
 ## 🔷 What is Prisma?
 
