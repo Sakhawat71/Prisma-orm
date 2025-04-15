@@ -1,4 +1,5 @@
-import { PrismaClient } from "../generated/prisma";
+import { PrismaClient } from "@prisma/client";
+
 
 
 const prisma = new PrismaClient();
@@ -29,22 +30,22 @@ const update = async () => {
     // });
 
     // UPSERT -> update or create
-    const upsertData = await prisma.post.upsert({
-        where: {
-            id: 9
-        },
-        update: {
-            author: 'Mr z'
-        },
-        create: {
-            title: 'hello mama',
-            author: 'mr y',
-            authorId: 101,
-            content: 'one two'
-        }
-    })
+    // const upsertData = await prisma.post.upsert({
+    //     where: {
+    //         id: 9
+    //     },
+    //     update: {
+    //         author: 'Mr z'
+    //     },
+    //     create: {
+    //         title: 'hello mama',
+    //         author: 'mr y',
+    //         authorId: 101,
+    //         content: 'one two'
+    //     }
+    // })
 
-    console.log(upsertData);
+    // console.log(upsertData);
 
 };
 
