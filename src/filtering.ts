@@ -44,8 +44,8 @@ const filteringQuery = async () => {
         where: {
             NOT: [
                 {
-                    title : {
-                        contains : 'Software'
+                    title: {
+                        contains: 'Software'
                     }
                 }
             ]
@@ -55,13 +55,23 @@ const filteringQuery = async () => {
 
     // 
     const startWith = await prisma.user.findMany({
-        where : {
+        where: {
             email: {
-                startsWith: 'user2'
+                startsWith: 'user2' //we can use -> endWith , contains, equals
             }
         }
     });
     // console.log(startWith);
+
+    const inDepthData = await prisma.post.findUnique({
+        where : {
+            id :3
+        },
+        include: {
+            postCategory : true
+        }
+    });
+    // console.log(inDepthData);
 
 };
 
