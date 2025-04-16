@@ -9,10 +9,10 @@ const main = async () => {
 
     // create user
     // const createUser = await prisma.user.create({
-    //     data : {
-    //         userName : 'user1',
-    //         email: 'user1@email.com',
-    // role: userRole.user
+    //     data: {
+    //         userName: 'user3',
+    //         email: 'user3@email.com',
+    //         role: userRole.user
     //     }
     // })
     // console.log(createUser);
@@ -20,8 +20,8 @@ const main = async () => {
     // create profile
     // const createProfile = await prisma.profile.create({
     //     data: {
-    //         bio: 'this is bio for user1',
-    //         userId: 1
+    //         bio: 'this is bio for user3',
+    //         userId: 3
     //     }
     // })
     // console.log(createProfile);
@@ -29,7 +29,7 @@ const main = async () => {
     // create categroy
     // const createCategroy = await prisma.category.create({
     //     data: {
-    //         name: 'Technology'
+    //         name: 'Food'
     //     }
     // })
     // console.log(createCategroy);
@@ -39,12 +39,12 @@ const main = async () => {
     // create one with singel category
     // const createPost = await prisma.post.create({
     //     data: {
-    //         title: 'this is title for Software engineering',
-    //         content: "hello world, this is content for Software engineering",
-    //         authorId: 1,
+    //         title: 'UCL night',
+    //         content: "We're talking about champions League",
+    //         authorId: 2,
     //         postCategory: {
     //             create: {
-    //                 categoryId: 2
+    //                 categoryId: 4
     //                 // categroy: {
     //                 //     connect: {
     //                 //         id: 1
